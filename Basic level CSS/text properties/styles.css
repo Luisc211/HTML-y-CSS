@@ -1,0 +1,13 @@
+p {
+    color: green; /*Modifica el color del texto*/
+    font-family: sans-serif; /*Estilo de la tipografía o fuente, sin comillas, con comilllas, con comillas simples se debe usar cuando el nombre de la tipografía tiene mas de una palabra sin guión medio, cuando es de una sola palabra se puede dar sin comillas.*/
+    font-size: 16px;/*Tamaño del texto, 32 px predeterminado para el h1 y 16 para el p*/
+    font-weight: 100 ; /*Grozor de la fuente, tenemos el grozor del 100 al 900, 9 grozores para la misma, entre mas alto el número mas gruesa la fuente, hay tipografias que tienen las 9, otras 2, otras 3. o avaces 1 solo tamaño, pero la mayoria tienen almenos dos, bold establece un peso de 700, bolder detecta las mas gruesa*/
+    font-style: italic; /*Italica, negrita oblicua, también varia según la tipografía*/
+    text-align: center ; /*Alinea el inicio del texto dentro de su contenedor, no aplica si el contenedor y el texto tienen el mismo tamaño*/
+    text-decoration: underline; /*Subrayado del texto, se pueden mezclar*/
+    line-height: normal; /*Distancia entre lineas de texto*/
+    letter-spacing: 2px; /*Separación entre las letras*/
+    text-transform: none ; /*Mayusculas, minusculas, todas las primeras letras de palabras mayusculas*/
+
+}
