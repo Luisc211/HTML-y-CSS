@@ -1,0 +1,23 @@
+/* Selectores por el nombre del elemento, basta con dar el nombre del elemento HTML al que le vamos a dar estilos */
+h1 {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+/*Selectores por clase, para invocar ese elemento, damos la clase que le hemos asignado con un punto por delante, la clase se la podemos dar a muchos elementos*/
+.faltante {
+    color: red;
+}
+
+.secreto {
+    color: purple;
+}
+
+/*Selectores por ID: para invocar el elemento por su id, damos el ID con un signo de hasthag por delante, solo
+se le debe dar un id a un solo elemento por página.*/
+#water {
+    color: blue;
+}
