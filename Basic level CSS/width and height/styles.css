@@ -1,0 +1,26 @@
+div {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    background-color: orange;
+
+}
+
+form {
+    background-color: darkkhaki;
+    margin-top: 20px;
+    width: 55%;
+    height: 70px ;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input {
+    margin: 3px;
+    width: 80%;
+    border: solid 1px;
+    border-radius: 2px;
+}
