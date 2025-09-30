@@ -1,0 +1,30 @@
+.formulario {
+    background-color: green;
+    padding: 30px; /*Shorthand de padding top, right, bottom y left*/
+    /*padding: 10px 0 10px 0* arriba, derecha, abajo, izquierda/
+    /*padding: 10px 20px, vertical y horizontal*/
+    margin: 50px;
+}
+
+.formulario_input {
+    padding: 6px 10px; /*Shorthand de padding top, right, bottom y left*/
+    width: 90%;
+    background: black;
+    color: green;
+    margin: 10px;
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: green;
+    width: 50%;
+    color: white;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 10px; /*Los margenes no se suman, se superpone el mayor, la separación total es la mayor*/
+}
