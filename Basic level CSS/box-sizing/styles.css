@@ -1,0 +1,27 @@
+.body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+}
+
+/* Con content-box el valor, el width y height que se definen solo aplican al contenido. El padding y border se añaden por encima: */
+
+/*content-box es el valor predeterminado, a la caja le dimos un ancho y alto dfe 100px el padding añade 60px, es decir 30 a cada lado, y más o menos 10px de borde para un total de 170px como tamaño de la caja*/
+.box-default {
+    padding: 30px;
+    /*30px más a cada lado a los 100 de ancho y alto, para un total de 160*/
+    border: 5px solid black;
+    /*5px a cada lado, a los 160, para un total de 170*/
+}
+
+/*Con box-sizing: border-box el tamaño en ancho y alto no crecera más y el contenido tendra que adaptarse*/
+.box-new {
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid black;
+}
