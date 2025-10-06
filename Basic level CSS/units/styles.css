@@ -1,0 +1,31 @@
+/*Centimetros, milimietros y pulgadas suelen usarse para elementos que se usaran en la vida real o seran impresos*/
+.box {
+    background-color: #B3B3B3;
+    padding: 1cm;
+    font-family: sans-serif;
+    border-left: #404040 solid 2px;
+}
+
+.box .title { /*.clase contenedora .clase hija*/
+    margin: 0;
+    font-size: 24px;
+}
+
+span {
+    color: #404040;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p {
+    color: #302626;
+}
+
+/*Los porcentajes no se suelen usar en margenes, rellenos, tamaños de letra*/
+
+/*em es igual al tamaño fuente del contenedor padre, si el box tiene un font size de 14 px y el p un font size de 1em eso quiere decir que el p tiene un font size de 14 px, si tiene 2em 28px y así sucesivamente, si el padre no tiene font size definido buscara al abuelo, y así ira mas arriba en las jerarquias de elementos, y por ultimo accedera al valor del navegador */
+
+/*rem funciona igual, pero busca al elemento raiz, en este caso html*/
+/*viewport*/
+
+/*Para la tipografia en general em y rem son ideales, los px son para medidas fijas, entrar a páginas web para ver que funcionamiento tienen las medidas en proyectos grandes*/
