@@ -1,0 +1,27 @@
+.box-color {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+}
+
+.box-rgba {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(41, 105, 35, 0.8);
+    margin: 20px;
+}
+
+.box-hexadecimal {
+    width: 100px;
+    height: 100px;
+    background-color: #82C280;
+    margin: 20px;
+}
+
+.box-hsl {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(120, 11%, 75%);
+    margin: 20px;
+}
