@@ -1,0 +1,8 @@
+.box {
+    width: 400px;
+    height: 400px;
+    /*Predeterminado es de arriba a abajo, to left a la izquierda
+    , to right, hacia la derecha, y to top desde abajo, hacia arriba, se pueden combinar más de dos colores*/
+    background: linear-gradient(to top, #f00, #0f0);
+    background: radial-gradient();
+}
