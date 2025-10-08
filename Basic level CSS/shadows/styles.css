@@ -1,0 +1,30 @@
+.box {
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow:  0 0 40px 0 #0007;
+    color: #999;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    line-height: 1.4;
+}
+
+p {
+    text-align: justify;
+    text-shadow: 0 0 5px #f00;
+}
+
+img {
+    max-width: 100%; /*Ajusta la imagen, para que el contenedor div no crezca excesivamente*/
+    height: auto;
+    display: block;
+    background-color: #fff;
+    filter: drop-shadow(0 0  5px #000);
+}
+
+/*Box shadow para las cajas, text shadow texto, drop shadow: filter imagenes formato png*/
