@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: #7A3D3D;
+}
+
+details {
+    margin: 20px;
+    border: 2px solid #1F1717;
+    border-radius: 6px;
+    max-width: 400px;
+    padding: 5px;
+}
+
