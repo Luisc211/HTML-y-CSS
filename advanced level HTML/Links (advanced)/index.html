@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Textarea</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>Formulario de contacto</h2>
+        <!--Simple Inputs-->
+        <div class="form_input">
+            <label for="name">Nombre</label>
+            <!--Con for y el id en el input focusiamos el elemento al dar clic en el label o envolviendo el input en la etiqueta label-->
+            <input type="email" placeholder="Jhon Doe" id="name">
+        </div>
+        <div class="form_input">
+            <label for="">Email</label>
+            <input type="email" placeholder="email@example.com">
+        </div>
+        <!--Select & options-->
+        <div class="form_input">
+            <label for="select">Tipo de usuario</label>
+            <select name="" id="select">
+                <option value="user1">Seguidor/a</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Otros</option>
+            </select>
+        </div>
+        <!--Datalist & option-->
+        <div class="form_input">
+            <label for="select">Referente</label>
+            <input list="referente" name="referente" placeholder="Referente">
+            <datalist id="referente" name="type-of-user">
+                <option value="amigo">Me refirio un amigo</option>
+                <option value="anuncio">Ví un anuncio en internet</option>
+                <option value="familiar">Un familiar me dió la información</option>
+            </datalist>
+        </div>
+        <!--Readonly disabled-->
+        <!--Textarea-->
+        <div class="form_input">
+            <label for="">Dejanos tu mensaje </label>
+            <textarea readonly name="" id="" placeholder="Deja tu mensaje aquí....." rows="8"></textarea>
+        </div>
+        <div class="form_input">
+            <label for="checkbox">Acepta nuestros <a href="terms.html" target="_blank">terminos y condiciones</a></label>
+            <input class="checkbox" type="checkbox" id="checkbox">
+        </div>
+    </form>
+</body>
+
+</html>
