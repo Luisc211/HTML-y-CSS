@@ -31,7 +31,8 @@ h2 {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     box-sizing: border-box;
     padding: 6px 8px;
@@ -42,6 +43,12 @@ textarea {
     border-radius: 4px;
     color: #eee;
     margin-top: 5px;
+}
+
+/*El option no se retoca mucho*/
+option {
+    background-color: #222;
+
 }
 
 textarea {
