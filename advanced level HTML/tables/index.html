@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <!--Las tablas se usan poco hoy por hoy en HTML, solo en casos puntuales para presentar datos tabulares, como en las hojas de calculo de Excel.-->
+    <table>
+        <!--tr es la abreviatura de Table Row, y la usamos para definir las filas de la tabla-->
+        <thead>
+            <tr>
+                <!--th es la abreviatura de Table Header-->
+                <th>Producto</th>
+                <th>Costo</th>
+                <th>Unidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--La etiqueta td es la abreviatura de Table Data, o datos de tabla, se usa para definir las celdas-->
+                <td>Banano</td>
+                <td>$3</td>
+                <td>1KG</td>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>$2</td>
+                <td>1KG</td>
+            </tr>
+            <tr>
+                <td>Melón</td>
+                <td>$4</td>
+                <td>1 unidad</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <!--Colspan es el número de columnas que abarcara la celda-->
+                <td colspan="2">$9</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
