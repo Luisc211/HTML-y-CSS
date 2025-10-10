@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio y video</title>
+</head>
+
+<body>
+    <video controls autoplay muted src="Video.mp4">
+        <track src="captions.vtt" default kind ="captions" srclang="en"></track>
+        Tu navegador no soporta video
+    </video>
+    <!--Sin los atributos controls autoplay y muted no se mostraran los elementos-->
+    <audio controls src="Audio.mp3"></audio>
+</body>
+
+</html>
