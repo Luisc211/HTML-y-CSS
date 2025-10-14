@@ -1,0 +1,23 @@
+/*Todas las fuentes contenidas dentro de body heredaran la fuente times new roman, aunque se las demos directamente al elemento o etiqueta padre, pero sin problema la podriamos cambiar cuando definamos los estilos de la etiqueta hija, hay propiedades que no se heredan por ejemplo el width*/
+body {
+    font-family: 'Times New Roman';
+    color: purple;
+}
+
+h1 {
+    color: green;
+}
+
+/*Inherit significa que buscara el clor declarado al elemento padre, o abuelo o ira buscando más arriba, o en su defecto el color que el navegador diga.*/
+h2 {
+    color: inherit;
+}
+
+.initial {
+    color: chartreuse;
+}
+
+/*Con initial se resstablece a su valor inicial o valor por defecto, o que le da el navegador*/
+h3 {
+    color: initial;
+}

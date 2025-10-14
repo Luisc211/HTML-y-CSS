@@ -1,0 +1,32 @@
+
+h1 {
+    color: #f00;
+}
+
+h1 {
+    color: #00f;
+}
+
+.titulo {
+    color: orange;
+}
+
+#titulo {
+    color: violet;
+}
+
+.titulo {
+    color: #0f0 !important;
+}
+
+h1 {
+    color:cyan !important;
+}
+/*La especifidad funciona cuando tenemos varias reglas conflictivas, al hacerlo */
+
+/*Bjo la misma regla ira dando prioridad en el orden descendiente */
+/*Clase sobreescribe a la cascada*/
+/*id sobreescribe a clase*/
+/*Important le gana a todas, si dos reglas tienen importan dara orden en descendiente, el orden importara al menos que se nombre el elemento por clase o ID.*/
+
+
