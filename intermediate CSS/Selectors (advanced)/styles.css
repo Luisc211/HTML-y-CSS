@@ -1,0 +1,53 @@
+
+
+/*Selección por atributo, por ejemplo para una imagen con el src = "Oceano pacifico, le podemos dar ancho del 100%"*/
+/*Importante no dejar espacio entre el nombre del elemento y el corchete*/
+
+/*Selección por valor exacto*/
+img[src="Oceano pacifico.jpg"] {
+    width: 100%;
+}
+
+/*Selección por termina en: jpg, usamos el signo $*/
+img[src$="jpg"] {
+    width: 50%;
+}
+
+/*Seleccion por empieza en: usamos el signo circunflejo, atributo de imagén con atributo src*/
+img[src^="fluminense"] {
+    width: 100%;
+}
+
+/*Selectores descendientes: elemento padre elemento hijo, lis que estan dentro de ul*/
+ul li {
+    color: greenyellow;
+}
+
+/*Tenemos la etiqueta li que esta conteniendo a strong, esto no especifica si strong debe ser hija directa o nieta, lo importante es que este dentro de ul, tengamos en cuenta que strong esta dentro de li, y li esta dentro de ul, strong es nieta, para darle estilo a elementos y necesitamos especificar que sea la etiqueta hija directa debemos añadir el simbolo mayor que >*/
+ul strong {
+    color: blue;
+}
+
+/*Aunque la etiqueta b no se debe usar mucho, la usaremos para el ejemplo*/
+/*Selector para hijo directo*/
+li > b {
+    color: orange;
+}
+
+/*Selector para elementos adyacentes (hermano que le sigue), en este caso le daremos estilo al p que viene después de h1, solo si sigue inmediatamente*/
+h1 + p {
+    color: red;
+}
+
+/*Selector de hermanos generales*/
+/*Le daremos estilo a todos los hermanos p, incluso al que va despues del h2, por que va después del h1, no aplica si hay elementos p antes de h1 */
+h1 ~ p {
+    font-family: 'Georgia';
+}
+
+/*Slección de multiples elementos*/
+
+h1, p {
+    background-color: burlywood;
+}
+
