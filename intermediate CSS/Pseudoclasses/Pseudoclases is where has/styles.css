@@ -1,0 +1,27 @@
+/*:is() es una pseudo-clase que agrupa múltiples selectores en uno solo, haciendo el código más corto y legible. A diferencia de :where(), SÍ tiene especificidad.*/
+
+
+/**/
+
+/*:where() es una pseudo-clase que agrupa selectores de manera eficiente, pero con una característica especial: tiene especificidad 0 (cero). 
+*/
+/*Sintaxis*/
+:where(selector1, selector2, selector3) {
+    /* estilos */
+}
+
+/*En lugar de poner h1, h3, h5 en reglas separadas, si le vamos a dar los mismos estilos a varios elementos*/
+:where(h1, h3, h5) {
+    color: blue;
+}
+
+
+/*La pseudoclase has se aplica por géneral al elemento padre y verifica si dentro tiene algo puntual, si tiene algo puntual le aplicara el estilo, si no lo tiene no lo aplicara, has traduce tiene al español*/
+ul:has(.elemento7) {
+    background-color: blue;
+}
+
+/*En caso de que al ul lo siga un div*/
+ul:has(+div) {
+    color: greenyellow;
+}
