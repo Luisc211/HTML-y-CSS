@@ -1,0 +1,40 @@
+
+/*Ejemplo: Modificar la primer letra de un h1*/
+h1::first-letter {
+    color: purple;
+}
+
+
+
+form {
+    width: 30%;
+    padding: 50px;
+    background-color: #000;
+    border-radius: 8px;
+    /*Flex-direction no funciona sin display*/
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/*El pseudoelemento placeholder */
+input::placeholder {
+    color: green;
+}
+
+/*First line modifica la primer linea de un p*/
+p::first-line {
+    color: aquamarine;
+}
+
+/*El pseudoelemento selection cambia los estilos al pasar al seleccionar con el mouse el elemento*/
+p::selection {
+    color: white;
+    background-color: green;
+}
+
