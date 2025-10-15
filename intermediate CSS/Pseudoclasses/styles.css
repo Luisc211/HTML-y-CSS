@@ -1,0 +1,64 @@
+.titulo {
+    color: #48e;
+    font-family: 'Times New Roman';
+    margin: 30px;
+}
+
+/*Pseudoclase hover, cambia el color de la fuente cuando pasemos el mouse por encima del h1 clase .titulo*/
+.titulo:hover {
+    color: chocolate;
+    background-color: cadetblue;
+}
+
+/*Pseudoclase active, cambia los estilos cuando damos clic en el elemento*/
+.titulo:active {
+    color: seagreen;
+    background-color: darkred;
+}
+
+
+/*Selecciona el primer elemento, solo podemos seleccionar el primer y ultimo elemento usando por pseudoclases*/
+li:first-child {
+    color: green;
+}
+
+/*Seleccionando el ultimo elemento*/
+li:last-child {
+    color: turquoise;
+}
+
+/*Seleccionar x elemento con la pseudoclase nth-child(n)*/
+li:nth-child(2) {
+    color: orange;
+}
+
+/*Con xn salteara elementos es decir si es 2n, un elemento si, un elemento no tomara el estilo, si es 3n un elemento si dos elemento no*/
+.salteado:nth-child(3n) {
+    color: red;
+}
+
+/*Se dara estilos a elementos que no tengan la clase excluido*/
+ol .salteado:not(.excluido) {
+    color: #fff;
+}
+
+div {
+    color: red;
+    border: 2px solid red;
+}
+
+/*La pseudoclase empty selecciona los estados vacios*/
+div:empty {
+    border: none;
+    background-color: red;
+}
+
+/*Enlace no visitado*/
+a {
+    color: red;
+}
+
+/*Enlace visitado*/
+a:visited {
+    color: green;
+}
