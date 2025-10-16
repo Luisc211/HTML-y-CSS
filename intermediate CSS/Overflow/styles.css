@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+.auto {
+    /*Mostrara el scroll solo si el elemento contenido desborda al elemento contenedor, si no, no lo mostrara*/
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    color: white;
+    overflow: auto;
+}
+
+.hidden {
+    /*Recortara y ocultara el contenido que se desborde del contenedor, hijos con position absolute se desbordaran*/
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    color: white;
+    overflow: hidden;
+}
+
+.scroll {
+    /*Mostrara el scroll asi no sea necesario*/
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+    color: white;
+    overflow: scroll;
+}
+
+.clip {
+    /*Similar a hidden pero más estricto*/
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    overflow: clip;
+}
+
+.visible {
+    /*El contenido que no quepa dentro de su contenedor se desbordara y sera visible, ESTE ES EL VALOR POR DEFECTO
+    declararlo o no declararlo sera igual*/
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    color: orange;
+    overflow: visible;
+}
+
+.no-overflow {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    color: orange;
+    overflow: visible;
+}

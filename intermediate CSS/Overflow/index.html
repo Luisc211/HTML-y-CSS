@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Overflow o desbordamiento</title>
+</head>
+
+<body>
+    <h2>Caja con overflow: auto (Mostrara el scroll solo si es necesario)</h2>
+    <div class="auto">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero, repellat quaerat nesciunt atque
+            dicta? Reiciendis odio reprehenderit id voluptas esse quam voluptate error eligendi ratione unde animi,
+            magni quidem!</P>
+    </div>
+    <h2>Caja con overflow: hidden, (Recorta y oculta contenido desbordado, flexible a programar con JavaScript)</h2>
+    <div class="hidden">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero, repellat quaerat nesciunt atque
+            dicta? Reiciendis odio reprehenderit id voluptas esse quam voluptate error eligendi ratione unde animi,
+            magni quidem!</P>
+    </div>
+    <h2>Caja con overflow: scroll (Mostrara el scrolll aunque no sea necesario)</h2>
+    <div class="scroll"></div>
+    <h2>Caja con overflow clip (Similar a hidden pero más estricto, no acepta programación con JavaScript)</h2>
+    <div class="clip">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolores recusandae pariatur fugit temporibus
+            odit veritatis, molestias blanditiis perspiciatis totam suscipit necessitatibus nisi omnis eligendi. Dicta
+            corporis id quisquam dolor.</p>
+    </div>
+    <h2>Caja con overflow: visible (por defecto) (El contenido que no quepa se desbordara y sera visible fuera de su contenedor)</h2>
+    <div class="visible">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolores recusandae pariatur fugit temporibus
+            odit veritatis, molestias blanditiis perspiciatis totam suscipit necessitatibus nisi omnis eligendi. Dicta
+            corporis id quisquam dolor.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolores recusandae pariatur fugit temporibus
+            odit veritatis, molestias blanditiis perspiciatis totam suscipit necessitatibus nisi omnis eligendi. Dicta
+            corporis id quisquam dolor.
+        </p>
+    </div>
+    <h2>Caja sin overflow</h2>
+    <div class="no-overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolores recusandae pariatur fugit temporibus
+            odit veritatis, molestias blanditiis perspiciatis totam suscipit necessitatibus nisi omnis eligendi. Dicta
+            corporis id quisquam dolor.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolores recusandae pariatur fugit temporibus
+            odit veritatis, molestias blanditiis perspiciatis totam suscipit necessitatibus nisi omnis eligendi. Dicta
+            corporis id quisquam dolor.
+        </p>
+    </div>
+    <ul>
+        <li><strong>Auto:</strong> Aparecera la barrita de scroll solo si el contenedor lo necesita</li>
+        <li><strong>Hidden:</strong>El contenido que sobresale del contenedor se recorta y oculta</li>
+        <li><strong>(Por defecto) visible: </strong>El contenido se desbordara y sera visible</li>
+        <li><strong>Scroll:</strong>Mostrara las barras de scroll aunque no sean necesarias</li>
+        <li><strong>Clip:</strong>No permitira ningún tipo de scroll, es muy estricto, el contenido desbordado se
+            ocultara, este es similar a hidden pero más estricto</li>
+    </ul>
+</body>
+
+</html>
