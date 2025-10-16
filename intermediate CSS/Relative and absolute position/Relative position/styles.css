@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: #fff;
+    /*La posición predeterminada de los elementos es static, al darle relative conservamos la posición original, pero relative nos da libertad de mover la caja hacía donde necesitemos o querramos, el navegador conservara el espacio que estaba ocupando el elemento inicialmente, se van a adquiririr las cuatro propiedades top, right, bottom, left,*/
+    position: relative;
+}
+
+.box--blue {
+    background-color: red;
+    /*La propiedad top tiene prioridad sobre bottom, left tiene propiedad por sobre right, esto si ambas estan definidas también aparece el z index*/
+
+    /*Al darle un top o bottom negativo se posiciona encima del elemento superior y por denajo del elemento inferior, cada caja nueva se pone por delante de la anterior*/
+    top: 50px;
+    left: 30px;
+    /*Con z-index controlamos el orden de apilamiento en el eje z (profundidad), elementos que aparecen por encima o debajo de otros al superponerse, es importante tener en cuenta que solo funcionan en elementos con position diferente a static*/
+    z-index: 10;
+}
