@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+.contenedor {
+    border: 2px solid #000;
+    margin: 20px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fcd581;
+    color: #fff;
+}
+
+.box--green {
+    background-color: #8f3;
+    position: absolute;  /*Con esto se posiciona relativamente al primer ancestro que tenga position relative, si no encuentra un ancestro con posición relative lo hara relativamente a la etiqueta html*/
+    top: 20px; /*Si .contenedor que es el padre de .box--green tiene position relative se movera 20 px hacia abajo en relacion a el, si no lo tiene se rompera y buscara otro ancestro o la etiqueta html*/
+}
+
+.box--red {
+    background-color: #f64;
+}
+
+/*Relative reserva el espacio en la pantalla*/
+/*Las posiciones son relativas respecto a su ancestro mas cercano relativo, en el peor de los casos html, pierde el espacio que tenia el elemento*/
