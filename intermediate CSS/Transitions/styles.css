@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS';
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin-top: 70px;
+    font-size: 20px ;
+    text-align: center;
+    /*Propiedades a transicionar, es mala practica dar el valo all ya que el navegador debe trabajar mucho, con transition nos ahorramos */
+    transition-property: color  background-color;
+    /*Duración que demora la trancisión*/
+    transition-duration: 2s;
+    /*Tiempo que demora en hacerse la transición*/
+    transition-delay: 2s;
+}
+
+.box:hover {
+    background-color: #a22;
+    color: #fff;
+}
