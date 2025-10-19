@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #bbb;
+}
+
+/*Valor predeterminado Normal*/
+.normal {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    /*Define como se comportan los espacios en blanco, normal es el valor por defecto */
+    white-space: normal;
+}
+
+/*No habran saltos de línea con nowrap*/
+.nowrap {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    /*Nowrap indica que no habran saltos de línea*/
+    white-space: nowrap;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.nowrap__title {
+    margin-top: 300px;
+}
+
+/*Pre: detecta y aplica los saltos de línea tal cual el desarrollador se los de al párrafo*/
+.pre {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    /*Nowrap indica que no habran saltos de línea*/
+    white-space: pre;
+}
+
+.pre__wrap {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    white-space: pre-wrap;
+}
+
+.text__overflow__title {
+    margin-top: 350px;
+}
+
+.text__overflow {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    white-space: nowrap; /*El white-space debe estar en normal*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: pretty; /*Balanceador de párrafos largos*/
+}
+
+h1 {
+    text-wrap: balance; /*Balancea el texto para que las palabras encajen esteticamente*/
+}
