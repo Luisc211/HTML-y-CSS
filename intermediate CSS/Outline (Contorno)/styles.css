@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    outline: 2px solid green;
+}
+/*Al pasar el mouse sobre la caja*/
+.box:hover {
+    outline: 3px solid gold;
+    outline-offset: 3px; 
+}
+
+form {
+    margin: 50px;
+    padding: 50px;
+    background-color: aqua;
+}
+
+input {
+    border: none;
+    border-top:  3px solid red;
+    padding: 5px;
+}
+
+/*Por temas de accesibilidad el outline se debe dar en la pseudoclase focus-visible y no en la pseudoclase focus*/
+input:focus {
+    border: none;
+    border-top:  3px solid yellowgreen;
+    padding: 5px;
+}
+
+input:focus-visible {
+    outline: none;
+}
