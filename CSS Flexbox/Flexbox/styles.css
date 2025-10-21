@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Calibri';
+}
+
+/*Elementos en dirección de columna, el main axis va verticalmente de arriba hacia abajo, el cross axis o eje cruzado va horizontalmente de izquierda a derecha*/
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    /*Flex-direction: column*/
+}
+
+.flex-column-item {
+    height: 100px;
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.flex-column-item:first-child {
+    /*Cambiamos el color de la primer caja para diferenciarla, usando la pseudoclase first-child*/
+    background-color: #f77;
+}
+
+/*Column reverse: Elementos en dirección de columna reversa, el primer esta comienza abajo y el ultimo arriba, el main axis va verticalmente de abajo hacia arriba, el cross axis o eje cruzado va horizontalmente de izquierda a derecha*/
+.flexbox-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    /*Flex-direction: column-reverse*/
+}
+
+.flex-column-reverse-item {
+    /*Cambiamos el color de la primer caja para diferenciarla, usando la pseudoclase first-child*/
+    height: 100px;
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.flex-column-reverse-item:first-child {
+    /*Cambiamos el color de la primer caja para diferenciarla, usando la pseudoclase first-child*/
+    background-color: #f77;
+}
+
+/*Row: Elementos en dirección de fila (row), el main axis va horizontalmente de izquierda hacia derecha, el cross axis o eje cruzado va verticalmente de arriba a abajo*/
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+    /*Flex-direction: row (fila)*/
+}
+
+.flex-row-item {
+    height: 100px;
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.flex-row-item:first-child {
+    /*Cambiamos el color de la primer caja para diferenciarla, usando la pseudoclase first-child*/
+    background-color: #f77;
+}
+
+/*row-reverse: Elementos en dirección de fila opuesta (row-reverse), el main axis va horizontalmente de derecha hacia izquierda, el cross axis o eje cruzado va verticalmente de arriba a abajo*/
+.flexbox-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    direction: ltr;
+    /*Flex-direction: row (fila)*/
+}
+
+.flex-row-reverse-item {
+    height: 100px;
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    direction: rtl;
+}
+
+.flex-row-reverse-item:first-child {
+    /*Cambiamos el color de la primer caja para diferenciarla, usando la pseudoclase first-child*/
+    background-color: #f77;
+}
