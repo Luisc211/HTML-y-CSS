@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Courier New';
+}
+
+.container {
+    display: flex;
+    background-color: green;
+    flex-flow: row wrap; /*Shorthand que abrevia flex-direction y flex-wrap en una sola línea*/
+    gap: 10px;
+    width: 300px;
+}
+
+.container--item {
+    background-color: #292121;
+    color: #ccc;
+}
