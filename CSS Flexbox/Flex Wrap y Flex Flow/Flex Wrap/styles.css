@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+/*-------------Caja contenedora sin wrap, los hijos se desbordaran si no caben dentro de ella------------*/
+.container__default {
+    display: flex;
+    width:200px; /*Le definimos un width, ya que predeterminadamente utilizara el 100% del ancho de la pantall */
+    background-color: #83B7C9;
+    gap: 20px;
+}
+
+.container__default--item {
+    background-color: #292121;
+    color: #ccc;
+}
+/*-------------Caja contenedora sin wrap, los hijos se desbordaran si no caben dentro de ella------------*/
+.container__nowrap {
+    display: flex;
+    width: 200px;
+    height: 100px; /*Le definimos un height, ya que la caja contenedora predeterminadamente se expandira para alojar las cajas hijas  */
+    background-color: #83B7C9;
+    gap: 20px;
+    flex-wrap: nowrap;
+    
+}
+
+.container__nowrap--item {
+    background-color: #292121;
+    color: #ccc;
+}
+
+.container__wrap {
+    display: flex;
+    width: 200px;
+    height: 100px; /*Le definimos un height, ya que la caja contenedora predeterminadamente se expandira para alojar las cajas hijas  */
+    background-color: #83B7C9;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container__wrap--item {
+    background-color: #292121;
+    color: #ccc;
+}

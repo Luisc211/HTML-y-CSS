@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flex Wrap</title>
+</head>
+<body>
+    <h1>Flex Wrap</h1>
+    <p>Flex Wrap es una propiedad de CSS que usamos dentro de una caja contenedera con display: flex, para indicar si
+        las cajas hijas flexibles deben mantenerse en una sola línea o pueden pasar a varias líneas cuando ya no caben
+        en el espacio disponible.
+    </p>
+    <h2>Cajas sin flex wrap, valor por defecto</h2>
+    <p>Si la cantidad de cajas hijas exceden el ancho de la caja padre, las que no caben se desbordaran y se saldran del contenedor</p>
+    <div class="container__default">
+        <div class="container__default--item" >Elemento 01</div>
+        <div class="container__default--item" >Elemento 02</div>
+        <div class="container__default--item" >Elemento 03</div>
+        <div class="container__default--item" >Elemento 04</div>
+        <div class="container__default--item" >Elemento 05</div>
+    </div>
+
+    <h2>Caja contenedera flexible sin flex wrap, valor por defecto</h2>
+    <p>Si la cantidad de cajas hijas exceden el ancho de la caja padre, las que no caben se desbordaran y se saldran del contenedor</p>
+    <div class="container__nowrap">
+        <div class="container__nowrap--item" >Elemento 01</div>
+        <div class="container__nowrap--item" >Elemento 02</div>
+        <div class="container__nowrap--item" >Elemento 03</div>
+        <div class="container__nowrap--item" >Elemento 04</div>
+        <div class="container__nowrap--item" >Elemento 05</div>
+    </div>
+
+    <h2>Caja contenedora flexible con flex wrap</h2>
+    <p>Si la cantidad de cajas hijas exceden el ancho de la caja padre, las que no caben iran a la siguiente línea</p>
+    <div class="container__wrap">
+        <div class="container__wrap--item" >Elemento 01</div>
+        <div class="container__wrap--item" >Elemento 02</div>
+        <div class="container__wrap--item" >Elemento 03</div>
+        <div class="container__wrap--item" >Elemento 04</div>
+        <div class="container__wrap--item" >Elemento 05</div>
+    </div>
+</body>
+</html>
